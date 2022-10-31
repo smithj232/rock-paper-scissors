@@ -21,7 +21,9 @@
 let userScore=0
 let computerScore=0
 function promptFunction() {
-    const userChoice=prompt(`Welcome to Rock Paper Scissors type rock paper or scissor to play reload to restart
+    const userChoice=prompt(`Welcome to Rock Paper Scissors best of 5
+    type rock paper or scissor to play 
+    reload to restart
     ${"you: "+userScore} ${"terminator: "+computerScore}`).toLowerCase()
     const computerChoice = getComputerChoice();
     playRound(userChoice,computerChoice)
@@ -29,10 +31,6 @@ function promptFunction() {
   function gameFunction(){
     for (let i = 0; i < 100; i++) {
       promptFunction()
-      if (userScore>=5){
-        alert("You have defeated The robot")
-        break;
-      }
       if (userScore>=5) {
         alert("You Have Defeated The Robot")
         break;
